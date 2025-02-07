@@ -2,9 +2,11 @@
 
 describe('Test de web para challenge QA Automation', () => {
 
+  const { url, cod} = require('../fixtures/data');
+
   before('Ingresar a la web',() => {
     cy.log("Bienvenido a Fravega!");
-    cy.visit('https://www.fravega.com');
+    cy.visit(url);
 
   })
 
@@ -14,8 +16,8 @@ describe('Test de web para challenge QA Automation', () => {
     // Ingresa el código postal
     cy.get('#header-geo-location-form-postal-number', { timeout: 15000 }) 
       .should('be.visible') 
-      .type("5008"); 
-    cy.wait(5000)
+      .type(cod); 
+    cy.wait(1000)
     cy.get('.sc-bOQTJJ > .sc-fUBkdm').click()
     //Agregar al carrito el primer producto
     cy.get(':nth-child(2) > [data-testid="home-categorias-destacadas-element"] > a > .sc-etVdmn > .sc-hqpNSm > .sc-dAEZTx').click()
