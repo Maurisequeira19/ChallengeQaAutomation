@@ -1,4 +1,9 @@
-# ChallengeQaAPI# Challenge test con Openweather y jsonplaceholder
+# ChallengeQa# IMPORTANTE!! 
+
+Aqui dejo una prueba idéntica a una de las pruebas que hice en Cypress pero en este caso utilizando Cucumber y Gherkin.
+https://github.com/Maurisequeira19/ChallengeQa-Cucumber-Gherkin
+
+# ChallengeQa# Challenge test con Openweather y jsonplaceholder
 
 Este repositorio contiene el challenge con los e2e tests desarrollados en Cypress.
 
